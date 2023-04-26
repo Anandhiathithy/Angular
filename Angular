@@ -1,0 +1,70 @@
+Define Angular?
+Angular is a platform and framework for building single-page client applications using HTML and TypeScript.
+Angular is written in TypeScript. 
+It implements core and optional functionality as a set of TypeScript libraries that you import into your applications.
+
+What are the Different Angular Versions: 
+
+Angular is the catch-all term for the various framework versions out there. 
+Angular was developed in 2009, and as a result, there have been many iterations.
+First, there was the original Angular, called Angular 1 and eventually known as AngularJS. 
+Then came Angulars 2, 3, 4, 5, until finally, the current version, Angular 11, released on 11/11/2020. Each subsequent Angular version improves on its predecessor, fixing bugs, addressing issues, and accommodating increasing complexity of current platforms.
+If you want to design apps better suited for mobile devices, and/or more complex apps, you had best to upgrade to its current version.
+
+Features of Angular?
+
+1. Document Object Model 
+
+DOM (Document Object Model) treats an XML or HTML document as a tree structure in which each node represents a part of the document.
+
+2. TypeScript 
+
+TypeScript defines a set of types to JavaScript, which helps users write JavaScript code that is easier to understand. 
+All of the TypeScript code compiles with JavaScript and can run smoothly on any platform. TypeScript is not compulsory for developing an Angular application. 
+However, it is highly recommended as it offers better syntactic structure—while making the codebase easier to understand and maintain. 
+
+3. Data Binding
+
+Angular uses the two-way binding. The model state reflects any changes made in the corresponding UI elements.
+Conversely, the UI state reflects any changes in the model state. 
+This feature enables the framework to connect the DOM to the model data through the controller.
+
+4. Testing
+
+Angular uses the Jasmine testing framework. The Jasmine framework provides multiple functionalities to write different kinds of test cases.
+Karma is the task-runner for the tests that uses a configuration file to set the start-up, reporters, and testing framework.
+
+
+
+
+What Are Angular Services?
+
+Angular services are objects that get instantiated just once during the lifetime of an application. 
+They contain methods that maintain data throughout the life of an application, i.e., data is available all the time. 
+
+
+
+The main objective of a service is to organize and share business logic, models, or data and functions with different components of an Angular application. 
+They are usually implemented through dependency injection. 
+
+
+Features of Angular Services
+
+    Services in Angular are simply typescript classes with the @injectible decorator. This decorator tells angular that the class is a service and can be injected into components that need that service. They can also inject other services as dependencies. 
+    As mentioned earlier, these services are used to share a single piece of code across multiple components. These services are used to hold business logic. 
+    Services are used to interact with the backend. For example, if you wish to make AJAX calls, you can have the methods to those calls in the service and use it as a dependency in files.
+ 
+   * A service is a class
+   *decorated with @injectible 
+   *They shar the same plece of code
+   *Hold the business logic
+   *interact with the backend
+   *share data among components
+   *service are singleton
+   *Registered on modules or components
+   
+    In angular, the components are singletons, meaning that only one instance of a service that gets created, and the same instance is used by every building block in the application. 
+    A service can be registered as a part of the module, or as a part of the component. To register it as a part of the component, you’ll have to specify it in the providers’ array of the module.
+
+Now that you know what services in Angular are, let us help you understand its working with the help of a simple demo. 
+   
